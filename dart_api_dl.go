@@ -45,7 +45,7 @@ func Init(api unsafe.Pointer) {
 	}
 }
 
-func SendToPort(port int64, mtype string,sessionid string, peerid string , msg int64) {
+func SendToPort(port int64, mtype string,sessionid string, peerid string , msg string) {
 	var obj C.Dart_CObject
 	obj._type = C.Dart_CObject_kInt64
 	var pwork unsafe.Pointer
